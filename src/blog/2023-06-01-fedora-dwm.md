@@ -24,7 +24,7 @@ Getting started with installation of suckless tools on your freshly install fedo
 before installing suckless tools we need to install some basic packages and dependencies. 
 
 ```shell
-sudo dnf install git vim cmake gcc libXft-devel libX11-devel libXinerama-devel @base-x firefox thunar mpv htop neofetch xinput feh patch zathura zathura-pdf-mupdf
+sudo dnf install git vim cmake gcc libXft-devel libX11-devel libXinerama-devel @base-x xinput patch
 ```
 
 After installing the packages we ready to go and install suckless tools

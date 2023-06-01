@@ -1,5 +1,5 @@
 ---
-title: fedora + dwm
+title: fedora and dwm
 description: Like most people, I started with Ubuntu. As time passed, I become a
   distro hopper, switching Linux distributions within months. Ubuntu is the only
   distribution that I have......

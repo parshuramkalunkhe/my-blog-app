@@ -50,13 +50,13 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   width: min(90ch, 100% - 4rem);
-	margin-inline: 2rem;
+  margin-inline: 2rem;
   color: var(--fg-color);
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -102,35 +102,55 @@ h3 {
   font-size: var(--ff-body);
 }
 
-.logo{
+.logo {
   border-bottom: 1px solid black;
   font-size: 1.2rem;
-	font-style: oblique;
+  font-style: oblique;
   line-height: 1.5;
 }
 
-.navitem{
+.navitem {
   margin: .2rem;
 }
 
-main > p {
+main>p {
   font-size: var(--ff-body);
 }
 
-.snippet{
+main>pre {
+  background: #222;
+  color: white;
+  padding: .5rem;
+  border-radius: 4px;
+}
+
+main>pre>code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.snippet {
   width: 100%;
   display: flex;
   margin: 1em 0;
 }
 
-.snippet > img{
+.snippet>img {
   width: 150px;
   height: 150px;
   margin-right: 1rem;
 }
 
-.snippet > div > h3 > a{
+.snippet>div>h3>a {
   color: var(--fg-color);
   text-decoration: none;
 }
 
+.description {
+  margin-left: 1em;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 2em 0;
+}

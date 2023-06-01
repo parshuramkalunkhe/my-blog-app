@@ -1,8 +1,9 @@
 <li class="snippet">
-    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+    <!-- <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"> 
+         by <span class="author">{{ post.data.author }}</span>
+    -->
     <div>
-        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-        <p class="author">by <span>{{ post.data.author }}</span> on <span>{{ post.data.date | postDate }}</span></p>
-        <p class="description">{{ post.data.description }}  <a href="{{ post.url }}">Continue Reading</a></p>
+        <h3>[ <span>{{ post.data.date | postDate }}</span> ] <a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p class="description">{{ post.data.description }} <a href="{{ post.url }}">continue reading</a></p>
     </div>
 </li>

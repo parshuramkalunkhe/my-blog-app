@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parshuram&#39;s blog</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <header>
+  <div class="container">
+    <h1 class="logo">parshuram kalunkhe</h1>
+    <nav>
+      <span class="navitem "> &lt;&lt;</span>
+      <span class="navitem "> <a href="/">blog</a> </span>
+      <span class="navitem "> <a href="/blog/">recent</a> </span>
+      <span class="navitem "> <a href="https://parshuramkalunkhe.github.io/">parshuramkalunkhe.github.io</a> </span>
+      <span class="navitem "> &gt;&gt;</span>
+    </nav> <br>
+  </div>
+</header>
+    <main>
+        <section>
+  <div class="container">
+    <div>
+      <h1 class="section-title">Welcome to my blog!</h1>
+      <p>
+        I use this space to document my adventures in web development, linux and scripting, sharing how I've overcome
+        issues I've run into, useful resources, and more.
+      </p>
+      <p>
+        Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.
+      </p>
+      <div>
+        <a href="#featured-articles">Featured articles</a> <br>
+        <a href="./blog">Most recent articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="featured-articles">
+  <div class="container flow">
+    <h2>Featured articles</h2>
+    <p>Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
+    <ul role="list"><li class="snippet">
+    <!-- <img src="/assets/blog/dwm.png" alt="Thu Jun 01 2023 18:57:04 GMT+0530 (India Standard Time)"> 
+         by <span class="author">parshuram kalunkhe</span>
+    -->
+    <div>
+        <h3>[ <span>Jun 1, 2023</span> ] <a href="/blog/2023-06-01-fedora-dwm/">fedora and dwm</a></h3>
+        <p class="description">Like most people, I started with Ubuntu. As time passed, I become a distro hopper, switching Linux distributions within months. Ubuntu is the only distribution that I have...... <a href="/blog/2023-06-01-fedora-dwm/">continue reading</a></p>
+    </div>
+</li></ul>
+  </div>
+</section>
+    </main>
+    <footer>
+  <span>© 2023 Parshuram Kalunkhe.</span>
+</footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

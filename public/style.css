@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bg-color: #f2f2f2;
+  --fg-color: #2f2f2f;
+
+  --ff-body: .8rem;
+  --ff-header: .9rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  line-height: 1.1;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role="list"]),
+ol:where([role="list"]) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: var(--ff-body);
+  text-rendering: optimizeSpeed;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  width: min(90ch, 100% - 4rem);
+  margin-inline: 2rem;
+  color: var(--fg-color);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-size: var(--ff-body);
+}
+
+.logo {
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+  font-style: oblique;
+  line-height: 1.5;
+}
+
+.navitem {
+  margin: .2rem;
+}
+
+main>p {
+  font-size: var(--ff-body);
+}
+
+main>pre {
+  background: #222;
+  color: white;
+  padding: .5rem;
+  border-radius: 4px;
+}
+
+main>pre>code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.snippet {
+  width: 100%;
+  display: flex;
+  margin: 1em 0;
+}
+
+.snippet>img {
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.snippet>div>h3>a {
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+.description {
+  margin-left: 1em;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 2em 0;
+}

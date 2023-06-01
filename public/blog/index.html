@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recent</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <header>
+  <div class="container">
+    <h1 class="logo">parshuram kalunkhe</h1>
+    <nav>
+      <span class="navitem "> &lt;&lt;</span>
+      <span class="navitem "> <a href="/">blog</a> </span>
+      <span class="navitem "> <a href="/blog/">recent</a> </span>
+      <span class="navitem "> <a href="https://parshuramkalunkhe.github.io/">parshuramkalunkhe.github.io</a> </span>
+      <span class="navitem "> &gt;&gt;</span>
+    </nav> <br>
+  </div>
+</header>
+    <main>
+        <div class="container">
+  <h1>Recent articles</h1>
+  <ul role="list" class="articles__list flow"><li class="snippet">
+    <!-- <img src="/assets/blog/dwm.png" alt="Thu Jun 01 2023 18:57:04 GMT+0530 (India Standard Time)"> 
+         by <span class="author">parshuram kalunkhe</span>
+    -->
+    <div>
+        <h3>[ <span>Jun 1, 2023</span> ] <a href="/blog/2023-06-01-fedora-dwm/">fedora and dwm</a></h3>
+        <p class="description">Like most people, I started with Ubuntu. As time passed, I become a distro hopper, switching Linux distributions within months. Ubuntu is the only distribution that I have...... <a href="/blog/2023-06-01-fedora-dwm/">continue reading</a></p>
+    </div>
+</li></ul>
+</div>
+    </main>
+    <footer>
+  <span>© 2023 Parshuram Kalunkhe.</span>
+</footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

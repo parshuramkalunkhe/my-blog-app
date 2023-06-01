@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fedora and dwm</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <header>
+  <div class="container">
+    <h1 class="logo">parshuram kalunkhe</h1>
+    <nav>
+      <span class="navitem "> &lt;&lt;</span>
+      <span class="navitem "> <a href="/">blog</a> </span>
+      <span class="navitem "> <a href="/blog/">recent</a> </span>
+      <span class="navitem "> <a href="https://parshuramkalunkhe.github.io/">parshuramkalunkhe.github.io</a> </span>
+      <span class="navitem "> &gt;&gt;</span>
+    </nav> <br>
+  </div>
+</header>
+    <main>
+        <h2><strong>fedora and dwm</strong></h2>
+<p>Like most people, I started with Ubuntu. As time passed, I become a distro hopper, switching Linux distributions within months. Ubuntu is the only distribution that I have used for more than 5 months. Now, I'm thinking of sticking with only one distribution that does exactly what it needs to do and nothing more. So, I decided to go with fedora. The reason I choose fedora is because it stand between the most rock solid debian and rolling release arch linux distribution and there are lots of people who wants a stable and rolling release linux distribution.</p>
+<p>You can download Fedora iso from there official website.</p>
+<p>https://fedoraproject.org/</p>
+<p>Getting started with installation of suckless tools on your freshly install fedora linux.</p>
+<p>before installing suckless tools we need to install some basic packages and dependencies.</p>
+<pre><code class="language-shell">sudo dnf install git vim cmake gcc libXft-devel libX11-devel libXinerama-devel @base-x xinput patch
+</code></pre>
+<p>After installing the packages we ready to go and install suckless tools</p>
+<p>Installing dwm : Dynamic window manager</p>
+<pre><code class="language-shell">git clone https://git.suckless.org/dwm
+cd dwm 
+sudo make clean install
+</code></pre>
+<p>Installing st : simple terminal</p>
+<pre><code class="language-shell">git clone https://git.suckless.org/st
+cd st
+sudo make clean install
+</code></pre>
+<p>Installing dmenu : Dynamic menu for x</p>
+<pre><code class="language-shell">git clone https://git.suckles.org/dmenu
+cd dmenu
+sudo make clean install
+</code></pre>
+<p>Now, create a file .xinitrc in your home/user directory and put this inside it :</p>
+<pre><code class="language-shell">#!/bin/bash
+
+exec dwm 
+</code></pre>
+<p>I will add more stuff here soon.....</p>
+
+    </main>
+    <footer>
+  <span>© 2023 Parshuram Kalunkhe.</span>
+</footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

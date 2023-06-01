@@ -22,7 +22,7 @@ Getting started with installation of suckless tools on your freshly install fedo
 
 before installing suckless tools we need to install some basic packages and dependencies. 
 
-```
+```shell
 sudo dnf install git vim cmake gcc libXft-devel libX11-devel libXinerama-devel @base-x firefox thunar mpv htop neofetch xinput feh patch zathura zathura-pdf-mupdf
 ```
 
@@ -30,7 +30,7 @@ After installing the packages we ready to go and install suckless tools
 
 Installing dwm : Dynamic window manager
 
-```
+```shell
 git clone https://git.suckless.org/dwm
 cd dwm 
 sudo make clean install
@@ -38,7 +38,7 @@ sudo make clean install
 
 Installing st : simple terminal 
 
-```
+```shell
 git clone https://git.suckless.org/st
 cd st
 sudo make clean install
@@ -46,7 +46,7 @@ sudo make clean install
 
 Installing dmenu : Dynamic menu for x
 
-```
+```shell
 git clone https://git.suckles.org/dmenu
 cd dmenu
 sudo make clean install
@@ -54,7 +54,7 @@ sudo make clean install
 
 Now, create a file .xinitrc in your home/user directory and put this inside it :
 
-```
+```shell
 #!/bin/bash
 
 exec dwm 

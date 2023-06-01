@@ -3,6 +3,9 @@
 :root {
   --bg-color: #f2f2f2;
   --fg-color: #2f2f2f;
+
+  --ff-body: .8rem;
+  --ff-header: .9rem;
 }
 
 /* Box sizing rules */
@@ -23,8 +26,6 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
-
   line-height: 1.1;
 }
 
@@ -44,9 +45,12 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  font-size: var(--ff-body);
   text-rendering: optimizeSpeed;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
+  width: min(90ch, 100% - 4rem);
+	margin-inline: 2rem;
   color: var(--fg-color);
 }
 
@@ -95,48 +99,38 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  font-size: var(--ff-body);
 }
 
-main{
-  margin: 4px;
+.logo{
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+	font-style: oblique;
+  line-height: 1.5;
+}
+
+.navitem{
+  margin: .2rem;
 }
 
 main > p {
-  padding: 1em;
+  font-size: var(--ff-body);
 }
 
-.snippet {
-  margin: 1em;
-  padding: 1em;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.66);
-  border-radius: 10px;
+.snippet{
+  width: 100%;
+  display: flex;
+  margin: 1em 0;
 }
 
-.snippet> img{
-  border-radius: 10px;
-  padding-bottom: 10px;
+.snippet > img{
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
 }
 
-.snippet > h3 > a{
+.snippet > div > h3 > a{
   color: var(--fg-color);
-  padding-bottom: 10px;
   text-decoration: none;
 }
 
-.snippet > .author{
-  padding: 4px 0;
-  font-weight: 500;
-  font-size: .9rem;
-}
-
-.snippet > .description{
-  margin: 0;
-  padding: 0;
-  font-size: .8rem;
-}
-
-footer {
-  padding: 2em;
-  margin: 0;
-  text-align: center;
-}

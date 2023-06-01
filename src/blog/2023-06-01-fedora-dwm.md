@@ -6,7 +6,7 @@ description: Like most people, I started with Ubuntu. As time passed, I become a
 author: parshuram kalunkhe
 date: 2023-06-01T13:27:04.323Z
 tags:
-  - post
+  - featured
 image: /assets/blog/dwm.png
 imageAlt: 2023-06-01T13:27:04.347Z
 ---

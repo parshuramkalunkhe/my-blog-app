@@ -15,7 +15,7 @@ Like most people, I started with Ubuntu. As time passed, I become a distro hoppe
 
 You can download Fedora iso from there official website.
 
-https://fedoraproject.org/
+<https://fedoraproject.org/>``
 
 Getting started with installation of suckless tools on your freshly install fedora linux.
 
@@ -51,7 +51,7 @@ cd dmenu
 sudo make clean install
 ```
 
-Now, create a file .xinitrc in your home/user directory and put this inside it :
+Now, create a file .xinitrc in your home/user/ directory and put this inside it :
 
 ```shell
 #!/bin/bash
@@ -59,4 +59,8 @@ Now, create a file .xinitrc in your home/user directory and put this inside it :
 exec dwm 
 ```
 
-I will add more stuff here soon.....
+By following these steps, you will have installed and set up the suckless tools (dwm, st, dmenu) on your Fedora Linux system.
+
+Enjoy using your new setup with a stable and customizable window manager!
+
+Note: Make sure to backup any important files before making any system changes and always exercise caution when working with system configurations.

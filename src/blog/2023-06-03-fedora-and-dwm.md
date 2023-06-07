@@ -15,7 +15,7 @@ Like most people, I started with Ubuntu. As time passed, I become a distro hoppe
 
 You can download Fedora iso from there official website.
 
-<https://fedoraproject.org/>``
+<https://fedoraproject.org/>
 
 Getting started with installation of suckless tools on your freshly install fedora linux.
 

@@ -9,7 +9,7 @@ tags:
   - post
   - featured
 ---
-# fedorarice
+# fedora and dwm
 
 Like most people, I started with Ubuntu. As time passed, I become a distro hopper, switching Linux distributions within months. Ubuntu is the only distribution that I have used for more than 5 months. Now, I'm thinking of sticking with only one distribution that does exactly what it needs to do and nothing more. So, I decided to go with fedora. The reason I choose fedora is because it stand between the most rock solid debian and rolling release arch linux distribution and there are lots of people who wants a stable and rolling release linux distribution. 
 
